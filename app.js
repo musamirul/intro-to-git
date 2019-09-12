@@ -69,6 +69,8 @@ app.use(indexRoutes);
 app.use("/campground/:id/comments",commentRoutes);
 app.use("/campground",campgroundRoutes);
 
-app.listen(3000,function(){
-    console.log("server has started")
-})
+app.listen(process.env.PORT || 3000, process.env.IP, function(){
+
+    console.log("server is listening...");
+  
+  });
