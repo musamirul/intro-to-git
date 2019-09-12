@@ -19,7 +19,7 @@ var indexRoutes = require("./routes/index");
 
 //seedDb(); //seed the database
 
-mongoose.connect("mongodb://localhost/yelp_camp_ver12", { useNewUrlParser: true })
+mongoose.connect("mongodb+srv://musamirul:cancer30!@cluster0-yus07.mongodb.net/test?retryWrites=true&w=majority", { useNewUrlParser: true, useCreateIndex: true })
 app.use(bodyParser.urlencoded({extended:true}));
 app.set("view engine","ejs");
 app.use(express.static(__dirname+"/public"));
@@ -74,3 +74,6 @@ app.listen(process.env.PORT || 3000, process.env.IP, function(){
     console.log("server is listening...");
   
   });
+// app.listen(3000,function(){
+//     console.log("server has started");
+// });
