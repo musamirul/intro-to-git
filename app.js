@@ -31,7 +31,7 @@ app.use(flash());
 
 //Directory
 //console.log(__dirname);
-
+//test
 // PASSPORT CONFIGURATION
 app.use(require("express-session")({
     secret : "Once again Ruty wins cutes dogs",
